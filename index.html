@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Gerador de frases luva de pedreiro</title>
+</head>
+<body>
+
+    <div class="fundo">
+    <div class="frase">
+    <div id="gerador">
+
+    </div>
+    <form>
+        <button class="botao" type="button" onClick="frasesLuva();">Gerar Frase</button>
+    </form>
+</body>
+</html>
+
+
+
+<script>
+
+function frasesLuva() {
+    var luva = new Array ();
+
+        luva[0] = "nunca desista dos seus sonhos";
+        luva[1] = "graças a deus";
+        luva[2] = "obrigado meu deus";
+        luva[3] = "receba";
+
+
+    var i = Math.floor(4*Math.random())
+
+        document.getElementById("gerador").innerHTML = "<div class="frase">" + luva[i];
+}
+</script>
